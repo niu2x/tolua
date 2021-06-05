@@ -158,7 +158,7 @@ function getnamespace (curr)
 	local namespace = ''
 	while curr do
 	 if curr and 
-		   ( curr.classtype == 'class' or curr.classtype == 'namespace')
+		   ( curr.classtype == 'class' )
 		then
 		 namespace = curr.name .. '::' .. namespace 
 		end

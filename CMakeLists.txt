@@ -19,7 +19,7 @@ endif ()
 file ( GLOB SRC_LIBTOLUA src/lib/*.c )
 
 add_library ( tolua_lib ${SRC_LIBTOLUA} )
-target_link_libraries ( tolua_lib ${LUA_LIBRARIES} )
+target_link_libraries ( tolua_lib ${LUA_LIBRARIES} dl)
 set_target_properties ( tolua_lib PROPERTIES OUTPUT_NAME tolua CLEAN_DIRECT_OUTPUT
   1 )
 
